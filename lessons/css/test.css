@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-grow: 1;
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+article{
+    justify-content: center;
+    align-items: center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+header, footer{
+    min-height: 60px;
+}
+header{
+    background-color: lightgreen;
+}
+footer{
+    background-color: lightcoral;
+}
+.left, .right{
+    width: 25%;
+}
+.center{
+    width: 50%;
+}
+.left{
+    background-color: beige;
+}
+.center{
+    background-color: darkkhaki;
+}
+.right{
+    background-color: rgb(116, 116, 150);
+}
+
