@@ -10,27 +10,41 @@
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
-        <header>
-            <logo></logo>
+        <header class="header">
 
-            <button>Lavender raf</button>
+            <a class="navbar-brand" href="#">
+                <img
+                src="logo.svg">
 
-            <navbar>
-                <ul>
-                    <li><button>Main Page</button></li>
-                    <li><button>Food</button></li>
-                    <li><button>Events</button></li>
-                    <li><button>Beauty And Care</button></li>
-                    <li><button>Books</button></li>
-                    <li><button>Contact Us</button></li>
+                <span>Citrus Raf</span> 
+            </a>
+                
+            <nav class="navbar" class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#main-page">Main Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beauty">Beauty And Care</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link current-page" href="#books">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-page">Contact Us</a>
+                    </li>
                 </ul>
-            </navbar>
-
+            </nav>
+            
         </header>
 
-        <jumbotron>
-            <h1>Books</h1>
-        </jumbotron>
+        <section class="jumbotron">Books</section>
             
             <h2>Here you can order new books:</h2>
             <ul>
