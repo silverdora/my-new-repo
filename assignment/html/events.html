@@ -8,15 +8,16 @@
         />
         <title>Events</title>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="icon" type="text/svg" href="favicon.svg"/>
     </head>
     <body>
         <header class="header">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="home-page.html">
                 <img
                 src="logo.svg">
 
-                <span>Lavender Raf</span> 
+                <span>Citrus Raf</span> 
             </a>
                 
             <nav class="navbar" class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -44,18 +45,27 @@
             
         </header>
 
-        <jumbotron>
-            <h1>Events</h1>
-        </jumbotron>
-        <article>
-            
-            <p>You are looking for information about:</p>
-            <ul>
-                <li href="#leccon">Lectures and concerts</li>
-                <li href="#meetshop">Meetings and workshops</li>
-            </ul>
+        <section class="jumbotron">Events</section>
 
-            <h2 id="leccon">Lectures and concerts</h2>
+        <article class="text">
+            <p>Monetochka’s concert, a quiz in your native language, 
+                Ekaterina Schulmann’s or Alexander Panchin’s lecture, 
+                a picnic, or a ceramic workshop - we provide a great list 
+                of websites and chats where you can find information about 
+                all upcoming events run by people who speak your language 
+                and share you cultural background. Just choose what you need and enjoy!</p>
+        </article>
+            
+        <section class="menu two-items">
+            <h1>Choose what you are looking for:</h1>
+            <ul>
+                <li><a href="#leccon">Lectures and concerts</a></li>
+                <li><a href="#meetshop">Meetings and workshops</a></li>
+            </ul>
+        </section>
+
+        <section id="leccon" class="subpage">
+            <h2 class="subsection">Lectures and concerts</h2>
             <ul>
                 <li>meetingpoint.benelux</li>
                 <li>somewhere show</li>
@@ -66,7 +76,9 @@
                 <li>fienta.com</li>
                 <li>kulturmultur</li>
             </ul>
+        </section>
 
+        <section id="meetshop" class="subpage">
             <h2 id="meetshop">Meetings and workshops</h2>
             <ul>
                 <li>explain.in.huma</li>
@@ -75,6 +87,18 @@
                 <li>Localie Home</li>
                 <li>kulturmultur</li>
             </ul>
-        </article>
+        </section>
+        <footer>
+            <a class="footer-brand" href="#">
+                <img
+                src="logo.svg">
+
+                <span>Citrus Raf</span> 
+            </a>
+
+            <h4>Contact Us</h4>
+
+            <p>(c) 2024 Citrus raf. All rights reserved</p>
+        </footer>
     </body>
 </html>

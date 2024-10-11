@@ -8,15 +8,16 @@
         />
         <title>Contact page</title>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="icon" type="text/svg" href="favicon.svg"/>
     </head>
     <body>
         <header class="header">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="home-page.html">
                 <img
                 src="logo.svg">
 
-                <span>Lavender Raf</span> 
+                <span>Citrus Raf</span> 
             </a>
                 
             <nav class="navbar" class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -44,12 +45,16 @@
             
         </header>
 
-        <jumbotron>
-            <h1>Let's get in touch</h1>
-        </jumbotron>
+        <section class="jumbotron">Let's get in touch</section>
         
         <p>If you have any information about other locations, shops, or specialists, please, share this.</p>
-        <form>
+        <section >
+        <form class="contact-form">
+            <label for="gender">Your gender:</label><br>
+            <input type="radio" id="radio" name="radio">Mr.<br>
+            <input type="radio" id="radio" name="radio">Ms.<br>
+            <input type="radio" id="radio" name="radio">Prefer not to say<br>
+
             <label for="name">Your name:</label><br>
             <input type="text" id="name" name="name"><br>
             
@@ -59,5 +64,19 @@
             <label for="info">What do you want to share (name, links, description):</label><br>
             <input type="text" id="info" name="info"><br>
         </form>
+    </section>
+
+        <footer>
+            <a class="footer-brand" href="#">
+                <img
+                src="logo.svg">
+
+                <span>Citrus Raf</span> 
+            </a>
+
+            <h4>Contact Us</h4>
+
+            <p>(c) 2024 Citrus raf. All rights reserved</p>
+        </footer>
     </body>
 </html>
