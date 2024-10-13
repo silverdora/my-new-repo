@@ -47,24 +47,59 @@
 
         <section class="jumbotron">Let's get in touch</section>
         
-        <p>If you have any information about other locations, shops, or specialists, please, share this.</p>
-        <section >
-        <form class="contact-form">
-            <label for="gender">Your gender:</label><br>
-            <input type="radio" id="radio" name="radio">Mr.<br>
-            <input type="radio" id="radio" name="radio">Ms.<br>
-            <input type="radio" id="radio" name="radio">Prefer not to say<br>
+        <section class="contact-prompt">
+            <p>If you have any information about other locations, shops, or specialists, please, share this.</p>
+        </section>
 
-            <label for="name">Your name:</label><br>
-            <input type="text" id="name" name="name"><br>
+        <section class="contact-form">
+        <form >
+            <fieldset class="visitor-gender form-field">
+                <label for="gender">Your gender:</label>
+
+                <section class="options">
+                    <fieldset class="option">
+                        <label class="mr" for="mr">Mr.</label>
+                        <input class="mr" type="radio" id="mr" name="radio" value="Mr.">
+                    </fieldset>
+                
+                    <fieldset class="option">
+                        <label for="ms">Ms.</label>
+                        <input type="radio" id="ms" name="radio" value="Ms.">
+                    </fieldset>
+
+                    <fieldset class="option">
+                        <label for="nogender">Not to mention</label>
+                        <input type="radio" id="nogender" name="radio" value="Not to mention">
+                    </fieldset>
+                </section>
+            </fieldset>
+
+            <fieldset class="visitor-name form-field">
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+            </fieldset>
             
-            <label for="contacts">Your contacts (email or telegram username):</label><br>
-            <input type="text" id="contacts" name="contacts"><br>
+            <fieldset class="visitor-email form-field">
+                <label for="email">Your email address:</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+            </fieldset>
 
-            <label for="info">What do you want to share (name, links, description):</label><br>
-            <input type="text" id="info" name="info"><br>
+            <fieldset class="form-field">
+                <label for="tel-number">Your phone number (optional):</label>
+                <input type="tel" id="tel-number" name="tel-number" placeholder="+06-XX-XXX-XXX">
+            </fieldset>
+
+            <fieldset class="visitor-info form-field">
+                <label for="info">What information would you like to share? </label>
+                <textarea id="info" name="info" rows="10" cols="5" placeholder="Your information"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <input class="form-field" type="submit" value="Send">
+            </fieldset>
         </form>
-    </section>
+        </section>
+    
 
         <footer>
             <a class="footer-brand" href="#">

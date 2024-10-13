@@ -50,3 +50,6 @@ footer{
     background-color: rgb(116, 116, 150);
 }
 
+form{
+    display: block;
+}
