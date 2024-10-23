@@ -15,7 +15,7 @@ body h2{
   display: block;
 }
 .header{
-  z-index: 10000;
+  z-index: 9998;
   height: 50px;
   background-color: #ef8938;
   position:fixed;
@@ -123,29 +123,92 @@ nav a:hover {
     /*margin-top: 99px;*/
     padding-top: 50px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 20px;
     margin-bottom: 20px;
     font-size: 50px;
-    color: black;
+    color: #faecd9;
     text-align: left;
     position:static;
 }
-.jumbotron-mail-page{
-  background-image: ;
+.jumbotron-main-page{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/main-page/jumbotron-main.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.jumbotron-food{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/food/jumbotron-food.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.jumbotron-beauty{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/beauty-and-care/jumbotron-beauty.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.jumbotron-books{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/books/jumbotron-books.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.jumbotron-events{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/events/jumbotron-events.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.jumbotron-contact-page{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/contact-page/jumbotron-contact.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
 }
 
 .introduction{
   
   position: relative;
   display: flex;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
 .introduction img{
   margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   display: flex;
   float: left;
+}
+.image{
+  display: flex;
+  align-items: center;
 }
 .text{
   font-size: large;
@@ -162,9 +225,7 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.menu h1{
-  margin-left: 20px;
-}
+
 
 .menu ul{
   list-style-type: none;
@@ -176,13 +237,12 @@ nav a:hover {
 
 
 .menu li{
-  background-color: #ef8938;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  box-sizing: border-box;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 15%;
@@ -193,7 +253,7 @@ nav a:hover {
 }
 
 .menu.two-items li{
-  width: 50%;
+  width: 45%;
 }
 
 .menu a{
@@ -203,6 +263,175 @@ nav a:hover {
 
 .menu a:hover{
   text-shadow:  #faecd9  1px 0 10px;;
+}
+
+.li-food{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/main-page/li-food.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-events{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/main-page/li-events.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-beauty{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/main-page/li-beauty.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-books{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/main-page/li-books.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-lectures{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/events/li-lectures.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-meetings{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/events/li-meetings.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+.li-cafes{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/food/li-cafes.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-shops{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/food/li-shops.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-hair{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/beauty-and-care/li-hair.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-nail{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/beauty-and-care/li-nails.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-brow{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/beauty-and-care/li-brows.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-massage{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/beauty-and-care/li-massage.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-order{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/books/li-order.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.li-clubs{
+  background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/books/li-clubs.png");
+  background-color: rgba(239, 137, 56, 1);
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+.cookie{
+  z-index: 9999;
+  position: fixed;
+  top: 100px;
+  box-shadow: 2px 2px 10px #77503d;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #faecd9;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 30%;
+}
+.cookie p{
+  text-align: center;
+  margin-top: 0;
+}
+.cookie a{
+  padding: 5px;
+  color: white;
+  background-color: #77503d;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cookie:target{
+  display: none;
 }
 
 .subpage{
@@ -218,7 +447,7 @@ nav a:hover {
 .card article{
   padding: 0 30px;
 }
-.card h1, .subpage h2{
+.card h1, .card h2{
   margin: 0;
 }
 .card ul{
@@ -249,7 +478,7 @@ nav a:hover {
   position:static;
 }
 .overlay { 
-  z-index: 100000000;
+  z-index: 9999;
   position: fixed; 
   overflow-y: scroll;
   background: rgba(119, 80, 61, 0.7);
@@ -304,8 +533,53 @@ nav a:hover {
   padding: 5px;
   border-radius: 5px;
 }
-.subpage h1, .subpage h2{
+.card h1, .card h2{
   padding: 0;
+}
+.list h2{
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.company{
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  border: 3px solid #77503d;
+  margin: 20px;
+  margin-top: 0;
+  padding: 10px;
+}
+.photo{
+  display: flex;
+  align-items: center;
+}
+.description{
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  ;
+}
+.description p{
+  margin-bottom: 0;
+}
+.description ul{
+  margin: 0;
+}
+.company-name h1, .company-name p{
+  margin: 0;
+}
+.company-name h1{
+  font-size: 20px;
+}
+.company-name p{
+  font-size: 12px;
+}
+.company-name a{
+  color: #000;
+  text-decoration: none;
 }
 .overlay:target {
   display: block;
