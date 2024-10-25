@@ -3,7 +3,10 @@ body{
   font-family: sans-serif;
   width: 100%;
   background-color: #f3e5d9;
-  .noscroll { overflow: hidden; }
+  /* .noscroll { overflow: hidden; } */
+  letter-spacing: normal;
+  line-height: normal;
+  word-spacing: normal;
 }
 body h1{
   font-size: 24px;
@@ -13,7 +16,10 @@ body h2{
 }
 .article{
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .header{
   z-index: 9998;
   height: 50px;
@@ -58,61 +64,19 @@ body h2{
   background-color: #faecd9;;
   color: black;
 }
-nav {
-  /*padding: 1rem;*/
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    /*background-color: #ef8938;*/
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    margin-top: 0;
-    
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-}
-nav li{
-  
-}
-nav button{
-  text-align: center;
-}
-nav a{
-    justify-content: flex-end;
-    display: flex;
-    align-items: flex-end;
-    float: right;
-    color: #faecd9;
-    text-align: center;
-    padding: 5px;
-    margin-right: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.8em;
-}
-
 nav a:hover {
-    background-color: #faecd9;;
-    color: black;
-  }
-  
-  nav a:active {
-    background-color: #000000;
-    color: #faecd9;
-  }
-  .current-page{
-    background-color: #77503d;
-    color: white;
+  background-color: #faecd9;;
+  color: black;
+}
 
-  }
+nav a::selection{
+  background-color: #000;
+  color: #faecd9;
+}
+nav a:active{
+  background-color: #000;
+  color: #faecd9;
+}
 
 .jumbotron{
     display: flex;
@@ -192,36 +156,43 @@ nav a:hover {
 }
 
 .introduction{
-  
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 .introduction img{
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   display: flex;
   float: left;
 }
 .image{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+figcaption{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 .text{
   font-size: large;
-  margin: 20px auto;
-  max-width: 60%;
+  margin: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  text-indent: 1em;
 }
+
 
 .menu{
   padding: 40px;
+  padding-top: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -243,27 +214,19 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 15%;
-  padding-bottom: 15%;*/
-}
-.menu.four-items li{
-  width: 20%;
 }
 
-.menu.two-items li{
-  width: 45%;
-}
 
 .menu a{
   color: #faecd9;
   text-decoration: none;
+  text-align: center;
 }
 
 .menu a:hover{
   text-shadow:  #faecd9  1px 0 10px;;
 }
+
 
 .li-food{
   background: linear-gradient(rgba(119, 80, 61, 0.7), rgba(119, 80, 61, 0.7)),url("../img/main-page/li-food.png");
@@ -419,6 +382,7 @@ nav a:hover {
   padding: 20px;
   max-width: 30%;
 }
+
 .cookie p{
   text-align: center;
   margin-top: 0;
@@ -430,7 +394,7 @@ nav a:hover {
   border-radius: 5px;
   text-decoration: none;
 }
-.cookie:target{
+body:has(:target) .cookie{
   display: none;
 }
 
@@ -461,7 +425,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-.subpage subheader{
+.subpage .subheader{
   justify-content: space-between;
   display: flex;
   
@@ -495,13 +459,13 @@ nav a:hover {
 }
 
 
-.subpage subheader article{
+.subpage .subheader article{
   display: flex;
   padding: 20px;
   align-items: center;
   justify-content: center;
 }
-.subpage subheader section{
+.subpage .subheader section{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -521,7 +485,7 @@ nav a:hover {
   border-radius: 5px;
   text-shadow: none;
 }
-.subpage subheader a{
+.subpage .subheader a{
   text-decoration: none;
   font-size: 0.8rem;
   margin: 0;
@@ -548,6 +512,7 @@ nav a:hover {
   flex-direction: row;
   border-radius: 5px;
   border: 3px solid #77503d;
+  border-width: 3px;
   margin: 20px;
   margin-top: 0;
   padding: 10px;
@@ -626,7 +591,7 @@ nav a:hover {
   background-size: cover;
   border-radius: 5px;
 }
-.contact-form label{
+.contact-form label, legend{
   color: #faecd9;
 }
 .contact-form p{
@@ -709,7 +674,6 @@ footer{
   height: 50px;
   background-color: #ef8938;
   margin: 0;
-  margin-top: 40px;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -755,17 +719,15 @@ footer h4{
 footer p{
   padding-right: 10px;
   color: #faecd9;
-  font: 0.5em sans-serif;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .footer-brand img:hover, .footer-brand span:hover, footer h4 a:hover{
   background-color: #faecd9;;
   color: black;
 }
-
-
 
 footer a {
   text-align: center;
@@ -775,4 +737,296 @@ footer a {
   color: black;
   margin: 10px;
   border-radius: 5px;
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+  body{
+    width: 100%;
+  }
+  .hamburger, .close-menu{
+    display: none;
+  }
+
+  
+
+  nav {
+    /*padding: 1rem;*/
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      /*background-color: #ef8938;*/
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      margin-top: 0;
+      
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav li{
+    
+  }
+  nav button{
+    text-align: center;
+  }
+  nav a{
+      justify-content: flex-end;
+      display: flex;
+      align-items: flex-end;
+      float: right;
+      color: #faecd9;
+      text-align: center;
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.8em;
+  }
+  
+    
+    
+    /* nav a:active {
+      background-color: #000000;
+      color: #faecd9;
+    } */
+    .current-page{
+      background-color: #77503d;
+      color: white;
+  
+    }
+  .introduction .text{
+    max-width: 40%;
+  }
+  .text{
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body p{
+    font-size: 20px;
+  }
+  
+  .menu ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu li{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  .menu.four-items li{
+    width: 20%;
+  }
+  
+  .menu.two-items li{
+    width: 45%;
+  }
+
+  
+
+  footer p{
+    font: 0.6em sans-serif;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  body{
+    max-width: 767px;
+  }
+  body p{
+    font-size: 18px;
+  }
+
+  body h1{
+    font-size: 20px;
+  }
+  .hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .close-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .hamburger:has(~:target) {
+    display: none;
+  }
+  .close-menu:has(~:not(:target)) {
+      display: none;
+  }
+
+
+  .navbar-nav:not(:target) {
+    display: none;
+  }
+  .navbar-nav:target{
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ef8938;
+    z-index: 10000;
+  }
+
+  nav {
+    /*padding: 1rem;*/
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /*background-color: #ef8938;*/
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+      
+      margin-top: 0;
+      
+  }
+  
+  nav ul {
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+  }
+  nav button{
+    text-align: center;
+  }
+  nav a{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      float: right;
+      color: #faecd9;
+      text-align: center;
+      padding: 5px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.8em;
+  }
+  
+  nav a:hover {
+      background-color: #faecd9;;
+      color: black;
+    }
+    
+    .current-page{
+      background-color: #77503d;
+      color: white;
+  
+    }
+
+  .cookie{
+    left: 20px;
+    max-width: 250px;
+  }
+
+  .jumbotron{
+    margin-bottom: 0;
+    font-size: 36px;
+  }
+
+  .introduction{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .introduction img{
+    width: 92%;
+    height: auto;
+  }
+  .introduction .text{
+    
+    margin: 20px;
+  }
+  .text{
+    margin: 30px;
+  }
+  .menu{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  
+  .subpage .subheader article{
+    font-size: 24px;
+    padding: 10px;
+    max-width: min-content;
+  }
+  .company img {
+   width: 66.67px;
+   object-fit: cover;
+   object-position: left;
+  }
+  .description ul{
+    padding-left: 20px;
+    font-size: 16px;
+    max-width: fit-content;
+  }
+  .card ul{
+    font-size: 16px;
+  }
+  .card ul p{
+    font-size: 16px;
+  }
+  .card article {
+    padding: 0 10px;
+  }
+  .company-name, .company-service, .company-name h1, .company-name p, .company-service p, .company-service ul, .company-service li, .card a{
+    max-width: fit-content;
+  }
+  .card h2, .card ul{
+    font-size: smaller;
+  }
+
+  .contact-prompt{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contact-form{
+    margin-bottom: 20px;
+  }
+
+  footer h4{
+    font-size: 12px;
+    text-align: center;
+    margin-left: -10%;
+  }
+  footer p{
+    font-size: 6px;
+    text-align: right;
+  }
 }

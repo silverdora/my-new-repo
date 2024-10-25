@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="=en">
+<html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
         <meta
             name="viewpoint" 
             content="width=device-width, initial-scale=1.0"
-        />
+        >
+        <meta name="author" content="Daria Gakhova">
+        <meta name="keywords" content="expats places find raf draniki">
         <title>Citrus raf</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="icon" type="text/svg" href="favicon.svg"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="text/svg" href="favicon.svg">
     </head>
     <body>
         <header class="header">
 
             <a class="navbar-brand" href="home-page.html">
                 <img
+                alt="logo"
+                title="citrus raf"
                 src="logo.svg">
 
                 <span>Citrus Raf</span> 
             </a>
                 
-            <nav class="navbar" class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <nav class="navbar">
+                <a class="hamburger" href="#navbar-nav">
+                    <img
+                    src="../html/img/main-page/burger-menu.svg"
+                    alt="menu"
+                    title="menu"
+                    width="30"
+                    height="30">
+                </a>
+                <a class="close-menu" href="home-page.html#cookie">
+                    <img
+                    src="../html/img/main-page/close_icon.svg"
+                    alt="close"
+                    title="close"
+                    width="30"
+                    height="30">
+                </a>
+                <ul class="navbar-nav" id="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link current-page" href="home-page.html">Main Page</a>
                     </li>
@@ -49,13 +69,16 @@
 
         <section class="introduction">
             <aside class="image">
+                <figure>
                 <img
                 src="../html/img/main-page/raf-main.png"
                 title="cup of the best raf"
                 alt="cup of the best raf"
-                width="333"
-                height="250"
+                width="433"
+                height="350"
                 >
+                <figcaption>What is Cutrus Raf?</figcaption>
+            </figure>
             </aside>
             <article class="text">
             <p><strong>Citrus raf</strong> - a comforting drink made of espresso, cream, sugar, and citrus zest. 
@@ -66,7 +89,7 @@
                 If so, you know, how it is difficult. And “Citrus raf” is here to 
                 help you find things so common in your home country and so hard to spot in your new place of residence.</p>
             <p>On this website, you may find information about food, events, books, 
-                and beauty specialists from Russia, Ukraine, and Belarus. Find your own citrus raf!</p>
+                and beauty specialists from Russia, Ukraine, and Belarus. <em>Find your own citrus raf!</em></p>
             </article>
             
 
@@ -97,14 +120,16 @@
         <footer>
             <a class="footer-brand" href="home-page.html">
                 <img
-                src="logo.svg">
+                src="logo.svg"
+                alt="logo"
+                title="citrus raf">
 
                 <span>Citrus Raf</span> 
             </a>
 
             <h4><a href="contact-page.html">Contact Us</a></h4>
 
-            <p>&copy 2024 Citrus raf. All rights reserved</p>
+            <p>&copy; 2024 Citrus raf. All rights reserved</p>
         </footer>
     </body>
 </html>

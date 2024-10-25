@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="=en">
+<html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
         <meta
             name="viewpoint" 
             content="width=device-width, initial-scale=1.0"
-        />
+        >
+        <meta name="author" content="Daria Gakhova">
+        <meta name="keywords" content="expats places find raf draniki">
         <title>Books</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="icon" type="text/svg" href="favicon.svg"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="text/svg" href="favicon.svg">
     </head>
     <body>
         <header class="header">
 
             <a class="navbar-brand" href="home-page.html">
                 <img
-                src="logo.svg">
+                src="logo.svg"
+                alt="logo"
+                title="citrus raf">
 
                 <span>Citrus Raf</span> 
             </a>
                 
-            <nav class="navbar" class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <nav class="navbar">
+                <a class="hamburger" href="#navbar-nav">
+                    <img
+                    src="../html/img/main-page/burger-menu.svg"
+                    alt="menu"
+                    title="menu"
+                    width="30"
+                    height="30">
+                </a>
+                <a class="close-menu" href="books.html">
+                    <img
+                    src="../html/img/main-page/close_icon.svg"
+                    alt="close"
+                    title="close"
+                    width="30"
+                    height="30">
+                </a>
+                <ul class="navbar-nav" id="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link " href="home-page.html">Main Page</a>
                     </li>
@@ -65,12 +85,12 @@
 
         <section id="booksorder" class="overlay" tabindex="-1">
             <section  class="subpage card">
-                <subheader>
+                <section class="subheader">
                     <article>Buy Books</article>
                     <section>
                         <a href="books.html" class="close-overlay close-button">Back</a>
                     </section>
-                </subheader>
+                </section>
                 <article>
                     <h2>You can use these websites to order books:</h2>
                     <ul>
@@ -88,12 +108,12 @@
 
         <section id="bookclubs" class="overlay" tabindex="-1">
             <section  class="subpage card">
-                <subheader>
+                <section class="subheader">
                     <article>Book Clubs</article>
                     <section>
                         <a href="books.html" class="close-overlay close-button">Back</a>
                     </section>
-                </subheader>
+                </section>
                 <article>
                     <h2>Here are some book clubs in Russian:</h2>
                     <ul>
@@ -108,14 +128,16 @@
         <footer>
             <a class="footer-brand" href="home-page.html">
                 <img
-                src="logo.svg">
+                src="logo.svg"
+                alt="logo"
+                title="citrus raf">
 
                 <span>Citrus Raf</span> 
             </a>
 
             <h4><a href="contact-page.html">Contact Us</a></h4>
 
-            <p>&copy 2024 Citrus raf. All rights reserved</p>
+            <p>&copy; 2024 Citrus raf. All rights reserved</p>
         </footer>
     </body>
 </html>
