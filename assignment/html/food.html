@@ -1,411 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta
-            name="viewpoint" 
-            content="width=device-width, initial-scale=1.0"
-        >
-        <meta name="author" content="Daria Gakhova">
-        <meta name="keywords" content="expats places find raf draniki">
-        <title>Food</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" type="text/svg" href="favicon.svg">
-    </head>
-    <body>
-        <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daria Gakhova" />
+    <meta name="keywords" content="expats places find raf draniki" />
+    <title>Food</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="text/svg" href="img/favicon.svg" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="navbar-brand" href="home-page.html">
+        <img src="img/logo.svg" alt="logo" title="citrus raf" />
+        <span>Citrus Raf</span>
+      </a>
 
-            <a class="navbar-brand" href="home-page.html">
-                <img
-                src="logo.svg"
-                alt="logo"
-                title="citrus raf">
+      <nav class="navbar">
+        <a class="hamburger" href="#navbar-nav">
+          <img
+            src="img/main-page/burger-menu.svg"
+            alt="menu"
+            title="menu"
+            width="30"
+            height="30"
+          />
+        </a>
+        <a class="close-menu" href="food.html">
+          <img
+            src="img/main-page/close_icon.svg"
+            alt="close"
+            title="close"
+            width="30"
+            height="30"
+          />
+        </a>
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home-page.html">Main Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link current-page" href="food.html">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beauty-and-care.html">Beauty And Care</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-page.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-                <span>Citrus Raf</span> 
-            </a>
-                
-            <nav class="navbar">
-                <a class="hamburger" href="#navbar-nav">
-                    <img
-                    src="../html/img/main-page/burger-menu.svg"
-                    alt="menu"
-                    title="menu"
-                    width="30"
-                    height="30">
-                </a>
-                <a class="close-menu" href="food.html">
-                    <img
-                    src="../html/img/main-page/close_icon.svg"
-                    alt="close"
-                    title="close"
-                    width="30"
-                    height="30">
-                </a>
-                <ul class="navbar-nav" id="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home-page.html">Main Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link current-page" href="food.html">Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="beauty-and-care.html">Beauty And Care</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="books.html">Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-page.html">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            
-        </header>
+    <section class="jumbotron jumbotron-food">Food</section>
 
-        <section class="jumbotron jumbotron-food">Food</section>
+    <article class="text">
+      <p>
+        Soft cottage cheese, crispy draniki, fresh bumble coffee, borodinski
+        bread, or even savoury rassolnik soup - Citrus Raf knows where to find
+        all these things. Just choose suitable shop or café and enjoy!
+      </p>
+    </article>
 
-        <article class="text">
-            <p>Soft cottage cheese, crispy draniki, fresh bumble coffee, borodinski bread, 
-                or even savoury rassolnik soup - Citrus Raf knows where to find all these 
-                things. Just choose suitable shop or café and enjoy!</p>
-        </article>
+    <section class="menu two-items">
+      <h1>Choose what you are looking for:</h1>
+      <ul>
+        <li class="li-cafes"><a href="#cafes">Cafés</a></li>
+        <li class="li-shops"><a href="#shops">Shops and food order</a></li>
+      </ul>
+    </section>
 
-        <section class="menu two-items">
-            <h1>Choose what you are looking for:</h1>
-            <ul>
-                <li class="li-cafes"><a href="#cafes">Cafés</a></li>
-                <li class="li-shops"><a href="#shops">Shops and food order</a></li>
-            </ul>
+    <section id="cafes" class="overlay" tabindex="-1">
+      <section class="subpage list">
+        <section class="subheader">
+          <article>Cafés and restaurants</article>
+          <section>
+            <a href="food.html" class="close-overlay close-button">Back</a>
+          </section>
         </section>
-            
-            
-        <section id="cafes" class="overlay" tabindex="-1">
-            <section class="subpage list">
-                <section class="subheader">
-                    <article>Cafés and restaurants</article>
-                    <section>
-                        <a href="food.html" class="close-overlay close-button">Back</a>
-                    </section>
-                </section>
 
-                <list-of-companies>
-
-                    <section class="company">
-                        <section class="photo">
-                            <img
-                            src="../html/img/food/cafe1.png"
-                            alt="place"
-                            title="place"
-                            width="200"
-                            height="200">
-                        </section>
-                        <section class="description">
-                            <section class="company-name">
-                                <h1>Blin Queen</h1>
-                                <p><a href="www.blinqueen.com">www.blinqueen.com</a></p>
-                                <p>Amsterdam, Amstel 102; Oranje-Vrijstaatkade 59</p>
-                            </section>
-                            <section class="company-service">
-                                <p><strong>You can find such things as:</strong></p>
-                                <ul>
-                                    <li>cottage cheese pancakes</li>
-                                    <li>draniki</li>
-                                    <li>raf coffee</li>
-                                    <li>chocolate potato</li>
-                                    <li>butterbrood with caviar</li>
-                                </ul>
-                            </section>
-                        </section>
-                    </section>
-
-                    <section class="company">
-                        <section class="photo">
-                            <img
-                            src="../html/img/food/cafe2.png"
-                            alt="place"
-                            title="place"
-                            width="200"
-                            height="200">
-                        </section>
-                        <section class="description">
-                            <section class="company-name">
-                                <h1>Estetique.cafe</h1>
-                                <p><a href="www.est-cafe.nl">www.est-cafe.nl</a></p>
-                                <p>Amsterdam, Cornelis Krusemanstraat 55</p>
-                            </section>
-                            <section class="company-service">
-                                <p><strong>You can find such things as:</strong></p>
-                                <ul>
-                                    <li>citrus raf coffee</li>
-                                    <li>bumble coffee</li>
-                                    <li>classic raf coffee</li>
-                                    <li>pink latte</li>
-                                    <li>hojicha latte</li>
-                                </ul>
-                            </section>
-                        </section>
-                    </section>
-
-                    <section class="company">
-                        <section class="photo">
-                            <img
-                            src="../html/img/food/cafe3.png"
-                            alt="place"
-                            title="place"
-                            width="200"
-                            height="200">
-                        </section>
-                        <section class="description">
-                            <section class="company-name">
-                                <h1>Sunny Side</h1>
-                                <p><a href="www.sunnysides.nl">www.sunnysides.nl</a></p>
-                                <p>Amsterdam, Prinsegracht 158hs</p>
-                            </section>
-                            <section class="company-service">
-                                <p><strong>You can find such things as:</strong></p>
-                                <ul>
-                                    <li>cottage cheese pancakes</li>
-                                    <li>courgette draniki</li>
-                                    <li>kotleti</li>
-                                    <li>borshch</li>
-                                    <li>olivie salad</li>
-                                </ul>
-                            </section>
-                        </section>
-                    </section>
-
-                    <section class="company">
-                        <section class="photo">
-                            <img
-                            src="../html/img/food/cafe4.png"
-                            alt="place"
-                            title="place"
-                            width="200"
-                            height="200">
-                        </section>
-                        <section class="description">
-                            <section class="company-name">
-                                <h1>Lila bakery</h1>
-                                <p><a href="www.instagram.com/lila.bakery.nl">www.instagram.com/lila.bakery.nl</a></p>
-                                <p>Rotterdam, Pannekoekstraat 83a</p>
-                            </section>
-                            <section class="company-service">
-                                <p><strong>You can find such things as:</strong></p>
-                                <ul>
-                                    <li>zefir</li>
-                                    <li>napoleon cake</li>
-                                    <li>honey cake</li>
-                                    <li>cottage cheese pancakes</li>
-                                    <li>oreshki</li>
-                                </ul>
-                            </section>
-                        </section>
-                    </section>
-
-                    <section class="company">
-                        <section class="photo">
-                            <img
-                            src="../html/img/food/cafe5.png"
-                            alt="place"
-                            title="place"
-                            width="200"
-                            height="200">
-                        </section>
-                        <section class="description">
-                            <section class="company-name">
-                                <h1>Batoni Khinkali</h1>
-                                <p><a href="www.instagram.com/batonikhinkali">www.instagram.com/lila.bakery.nl</a></p>
-                                <p>Amsterdam, Willemsparkweg 177</p>
-                            </section>
-                            <section class="company-service">
-                                <p><strong>You can find such things as:</strong></p>
-                                <ul>
-                                    <li>khinkali</li>
-                                    <li>khachapuri</li>
-                                    <li>pkhali</li>
-                                    <li>tsitsia</li>
-                                    <li>kupati</li>
-                                </ul>
-                            </section>
-                        </section>
-                    </section>
-
-                </list-of-companies>
-                <h2>Find out what you are looking for and enjoy!</h2>
+        <list-of-companies>
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/cafe1.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
             </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Blin Queen</h1>
+                <p><a href="www.blinqueen.com">www.blinqueen.com</a></p>
+                <p>Amsterdam, Amstel 102; Oranje-Vrijstaatkade 59</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>cottage cheese pancakes</li>
+                  <li>draniki</li>
+                  <li>raf coffee</li>
+                  <li>chocolate potato</li>
+                  <li>butterbrood with caviar</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/cafe2.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Estetique.cafe</h1>
+                <p><a href="www.est-cafe.nl">www.est-cafe.nl</a></p>
+                <p>Amsterdam, Cornelis Krusemanstraat 55</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>citrus raf coffee</li>
+                  <li>bumble coffee</li>
+                  <li>classic raf coffee</li>
+                  <li>pink latte</li>
+                  <li>hojicha latte</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/cafe3.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Sunny Side</h1>
+                <p><a href="www.sunnysides.nl">www.sunnysides.nl</a></p>
+                <p>Amsterdam, Prinsegracht 158hs</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>cottage cheese pancakes</li>
+                  <li>courgette draniki</li>
+                  <li>kotleti</li>
+                  <li>borshch</li>
+                  <li>olivie salad</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/cafe4.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Lila bakery</h1>
+                <p>
+                  <a href="www.instagram.com/lila.bakery.nl"
+                    >www.instagram.com/lila.bakery.nl</a
+                  >
+                </p>
+                <p>Rotterdam, Pannekoekstraat 83a</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>zefir</li>
+                  <li>napoleon cake</li>
+                  <li>honey cake</li>
+                  <li>cottage cheese pancakes</li>
+                  <li>oreshki</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/cafe5.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Batoni Khinkali</h1>
+                <p>
+                  <a href="www.instagram.com/batonikhinkali"
+                    >www.instagram.com/lila.bakery.nl</a
+                  >
+                </p>
+                <p>Amsterdam, Willemsparkweg 177</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>khinkali</li>
+                  <li>khachapuri</li>
+                  <li>pkhali</li>
+                  <li>tsitsia</li>
+                  <li>kupati</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </list-of-companies>
+        <h2>Find out what you are looking for and enjoy!</h2>
+      </section>
     </section>
 
     <section id="shops" class="overlay" tabindex="-1">
-        <section class="subpage list">
-            <section class="subheader">
-                <article>Shops and food order</article>
-                <section>
-                    <a href="food.html" class="close-overlay close-button">Back</a>
-                </section>
-            </section>
-
-            <list-of-companies>
-
-                <section class="company">
-                    <section class="photo">
-                        <img
-                        src="../html/img/food/shop1.png"
-                        alt="place"
-                        title="place"
-                        width="200"
-                        height="200">
-                    </section>
-                    <section class="description">
-                        <section class="company-name">
-                            <h1>Vesela Pani</h1>
-                            <p><a href="www.veselapani.nl">www.veselapani.nl</a></p>
-                            <p>Aalsmeer, Zijdstraat 1</p>
-                        </section>
-                        <section class="company-service">
-                            <p><strong>You can find such things as:</strong></p>
-                            <ul>
-                                <li>holubci</li>
-                                <li>zrazy</li>
-                                <li>mlyntsi</li>
-                                <li>chebureki</li>
-                                <li>vareniki</li>
-                            </ul>
-                        </section>
-                    </section>
-                </section>
-
-                <section class="company">
-                    <section class="photo">
-                        <img
-                        src="../html/img/food/shop2.png"
-                        alt="place"
-                        title="place"
-                        width="200"
-                        height="200">
-                    </section>
-                    <section class="description">
-                        <section class="company-name">
-                            <h1>Minimix</h1>
-                            <p><a href="www.minimixamsterdam.com">www.minimixamsterdam.com</a></p>
-                            <p>Amsterdam, Amstelveel</p>
-                        </section>
-                        <section class="company-service">
-                            <p><strong>You can find such things as:</strong></p>
-                            <ul>
-                                <li>cottage cheese bar</li>
-                                <li>khalva</li>
-                                <li>draniki</li>
-                                <li>buckwheat</li>
-                                <li>vinegret salad</li>
-                            </ul>
-                        </section>
-                    </section>
-                </section>
-
-                <section class="company">
-                    <section class="photo">
-                        <img
-                        src="../html/img/food/shop3.png"
-                        alt="place"
-                        title="place"
-                        width="200"
-                        height="200">
-                    </section>
-                    <section class="description">
-                        <section class="company-name">
-                            <h1>Smak</h1>
-                            <p><a href="https://www.smakfoodstoredenhaag.nl">https://www.smakfoodstoredenhaag.nl</a></p>
-                            <p>Amsterdam, Prinsegracht 158hs</p>
-                        </section>
-                        <section class="company-service">
-                            <p><strong>You can find such things as:</strong></p>
-                            <ul>
-                                <li>cottage cheese pancakes</li>
-                                <li>solyanks</li>
-                                <li>shuba salad</li>
-                                <li>red caviar</li>
-                                <li>kefir</li>
-                            </ul>
-                        </section>
-                    </section>
-                </section>
-
-                <section class="company">
-                    <section class="photo">
-                        <img
-                        src="../html/img/food/shop4.png"
-                        alt="place"
-                        title="place"
-                        width="200"
-                        height="200">
-                    </section>
-                    <section class="description">
-                        <section class="company-name">
-                            <h1>Strawberriya</h1>
-                            <p><a href="www.instagram.com/strawberriya.nl">www.instagram.com/strawberriya.nl</a></p>
-                            <p>Amsterdam, Amstelveen</p>
-                        </section>
-                        <section class="company-service">
-                            <p><strong>You can find such things as:</strong></p>
-                            <ul>
-                                <li>zefir</li>
-                                <li>oreshki</li>
-                                <li>kulich</li>
-                                <li>cottage cheese bars</li>
-                                <li>bird milk</li>
-                            </ul>
-                        </section>
-                    </section>
-                </section>
-
-                <section class="company">
-                    <section class="photo">
-                        <img
-                        src="../html/img/food/shop5.png"
-                        alt="place"
-                        title="place"
-                        width="200"
-                        height="200">
-                    </section>
-                    <section class="description">
-                        <section class="company-name">
-                            <h1>Varvara Family Bakery</h1>
-                            <p><a href="www.instagram.com/varvara_family_bakery">www.instagram.com/varvara_family_bakery</a></p>
-                            <p>Haarlem</p>
-                        </section>
-                        <section class="company-service">
-                            <p><strong>You can find such things as:</strong></p>
-                            <ul>
-                                <li>honey cake</li>
-                                <li>prague cake</li>
-                                <li>wafer rolls</li>
-                                <li>vareniki</li>
-                                <li>pies with cabbage</li>
-                            </ul>
-                        </section>
-                    </section>
-                </section>
-
-            </list-of-companies>
-            <h2>Find out what you are looking for and enjoy!</h2>
+      <section class="subpage list">
+        <section class="subheader">
+          <article>Shops and food order</article>
+          <section>
+            <a href="food.html" class="close-overlay close-button">Back</a>
+          </section>
         </section>
+
+        <list-of-companies>
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/shop1.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Vesela Pani</h1>
+                <p><a href="www.veselapani.nl">www.veselapani.nl</a></p>
+                <p>Aalsmeer, Zijdstraat 1</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>holubci</li>
+                  <li>zrazy</li>
+                  <li>mlyntsi</li>
+                  <li>chebureki</li>
+                  <li>vareniki</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/shop2.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Minimix</h1>
+                <p>
+                  <a href="www.minimixamsterdam.com"
+                    >www.minimixamsterdam.com</a
+                  >
+                </p>
+                <p>Amsterdam, Amstelveel</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>cottage cheese bar</li>
+                  <li>khalva</li>
+                  <li>draniki</li>
+                  <li>buckwheat</li>
+                  <li>vinegret salad</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/shop3.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Smak</h1>
+                <p>
+                  <a href="https://www.smakfoodstoredenhaag.nl"
+                    >https://www.smakfoodstoredenhaag.nl</a
+                  >
+                </p>
+                <p>Amsterdam, Prinsegracht 158hs</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>cottage cheese pancakes</li>
+                  <li>solyanks</li>
+                  <li>shuba salad</li>
+                  <li>red caviar</li>
+                  <li>kefir</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/shop4.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Strawberriya</h1>
+                <p>
+                  <a href="www.instagram.com/strawberriya.nl"
+                    >www.instagram.com/strawberriya.nl</a
+                  >
+                </p>
+                <p>Amsterdam, Amstelveen</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>zefir</li>
+                  <li>oreshki</li>
+                  <li>kulich</li>
+                  <li>cottage cheese bars</li>
+                  <li>bird milk</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+
+          <section class="company">
+            <section class="photo">
+              <img
+                src="img/food/shop5.png"
+                alt="place"
+                title="place"
+                width="200"
+                height="200"
+              />
+            </section>
+            <section class="description">
+              <section class="company-name">
+                <h1>Varvara Family Bakery</h1>
+                <p>
+                  <a href="www.instagram.com/varvara_family_bakery"
+                    >www.instagram.com/varvara_family_bakery</a
+                  >
+                </p>
+                <p>Haarlem</p>
+              </section>
+              <section class="company-service">
+                <p><strong>You can find such things as:</strong></p>
+                <ul>
+                  <li>honey cake</li>
+                  <li>prague cake</li>
+                  <li>wafer rolls</li>
+                  <li>vareniki</li>
+                  <li>pies with cabbage</li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </list-of-companies>
+        <h2>Find out what you are looking for and enjoy!</h2>
+      </section>
     </section>
     <footer>
-        <a class="footer-brand" href="home-page.html">
-            <img
-            alt="logo"
-            title="citrus raf"
-            src="logo.svg">
+      <a class="footer-brand" href="home-page.html">
+        <img alt="logo" title="citrus raf" src="img/logo.svg" />
+        <span>Citrus Raf</span>
+      </a>
 
-            <span>Citrus Raf</span> 
-        </a>
+      <h4><a href="contact-page.html">Contact Us</a></h4>
 
-        <h4><a href="contact-page.html">Contact Us</a></h4>
-
-        <p>&copy; 2024 Citrus raf. All rights reserved</p>
-    </footer>   
-    </body>
+      <p>&copy; 2024 Citrus raf. All rights reserved</p>
+    </footer>
+  </body>
 </html>

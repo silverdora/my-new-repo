@@ -1,141 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta
-            name="viewpoint" 
-            content="width=device-width, initial-scale=1.0"
-            
-        >
-        <meta name="author" content="Daria Gakhova">
-        <meta name="keywords" content="expats places find raf draniki">
-        <title>Contact page</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" type="text/svg" href="favicon.svg">
-    </head>
-    <body>
-        <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daria Gakhova" />
+    <meta name="keywords" content="expats places find raf draniki" />
+    <title>Contact page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="text/svg" href="favicon.svg" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="navbar-brand" href="home-page.html">
+        <img src="img/logo.svg" alt="logo" title="citrus raf" />
 
-            <a class="navbar-brand" href="home-page.html">
-                <img
-                src="logo.svg"
-                alt="logo"
-                title="citrus raf">
+        <span>Citrus Raf</span>
+      </a>
 
-                <span>Citrus Raf</span> 
-            </a>
-                
-            <nav class="navbar">
-                <a class="hamburger" href="#navbar-nav">
-                    <img
-                    src="../html/img/main-page/burger-menu.svg"
-                    alt="menu"
-                    title="menu"
-                    width="30"
-                    height="30">
-                </a>
-                <a class="close-menu" href="contact-page.html">
-                    <img
-                    src="../html/img/main-page/close_icon.svg"
-                    alt="close"
-                    title="close"
-                    width="30"
-                    height="30">
-                </a>
-                <ul class="navbar-nav" id="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home-page.html">Main Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="food.html">Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="beauty-and-care.html">Beauty And Care</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="books.html">Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link current-page" href="contact-page.html">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            
-        </header>
+      <nav class="navbar">
+        <a class="hamburger" href="#navbar-nav">
+          <img
+            src="img/main-page/burger-menu.svg"
+            alt="menu"
+            title="menu"
+            width="30"
+            height="30"
+          />
+        </a>
+        <a class="close-menu" href="contact-page.html">
+          <img
+            src="img/main-page/close_icon.svg"
+            alt="close"
+            title="close"
+            width="30"
+            height="30"
+          />
+        </a>
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home-page.html">Main Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="food.html">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beauty-and-care.html">Beauty And Care</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link current-page" href="contact-page.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <section class="jumbotron jumbotron-contact-page">Let's get in touch</section>
-        
-        <section class="contact-prompt">
-            <p>If you have any information about other locations, shops, or specialists, please, share this.</p>
-        </section>
+    <section class="jumbotron jumbotron-contact-page">
+      Let's get in touch
+    </section>
 
-        <section class="contact-form">
-        <form action="home-page.html" method="get">
-            <p>Fields with an asterisk (*) are mandatory.</p>
-            <fieldset class="visitor-gender form-field">
-                <legend >Your gender*</legend>
+    <section class="contact-prompt">
+      <p>
+        If you have any information about other locations, shops, or
+        specialists, please, share this.
+      </p>
+    </section>
 
-                <section class="options">
-                    <fieldset class="option">
-                        <label class="mr" for="mr">Mr.</label>
-                        <input class="mr" type="radio" id="mr" name="radio" value="Mr.">
-                    </fieldset>
-                
-                    <fieldset class="option">
-                        <label for="ms">Ms.</label>
-                        <input type="radio" id="ms" name="radio" value="Ms.">
-                    </fieldset>
+    <section class="contact-form">
+      <form action="home-page.html" method="get">
+        <p>Fields with an asterisk (*) are mandatory.</p>
+        <fieldset class="visitor-gender form-field">
+          <legend>Your gender*</legend>
 
-                    <fieldset class="option">
-                        <label for="nogender">Not to mention</label>
-                        <input type="radio" id="nogender" name="radio" value="Not to mention">
-                    </fieldset>
-                </section>
+          <section class="options">
+            <fieldset class="option">
+              <label class="mr" for="mr">Mr.</label>
+              <input class="mr" type="radio" id="mr" name="radio" value="Mr." />
             </fieldset>
 
-            <fieldset class="visitor-name form-field">
-                <label for="name">Your name*</label>
-                <input type="text" required id="name" name="name" placeholder="Ivan Ivanov">
-            </fieldset>
-            
-            <fieldset class="visitor-email form-field">
-                <label for="email">Your email address*</label>
-                <input type="email" required id="email" name="email" placeholder="your@email.com">
+            <fieldset class="option">
+              <label for="ms">Ms.</label>
+              <input type="radio" id="ms" name="radio" value="Ms." />
             </fieldset>
 
-            <fieldset class="form-field">
-                <label for="tel-number">Your phone number (optional):</label>
-                <input type="tel" id="tel-number" name="tel-number" placeholder="+06-XX-XXX-XXX">
+            <fieldset class="option">
+              <label for="nogender">Not to mention</label>
+              <input
+                type="radio"
+                id="nogender"
+                name="radio"
+                value="Not to mention"
+              />
             </fieldset>
+          </section>
+        </fieldset>
 
-            <fieldset class="visitor-info form-field">
-                <label for="info">What information would you like to share* </label>
-                <textarea required id="info"  name="info" rows="25" cols="5" placeholder="Links, locations, sources, contacts, opinion"></textarea>
-            </fieldset>
+        <fieldset class="visitor-name form-field">
+          <label for="name">Your name*</label>
+          <input
+            type="text"
+            required
+            id="name"
+            name="name"
+            placeholder="Ivan Ivanov"
+          />
+        </fieldset>
 
-            <fieldset>
-                <input class="send-button form-field" type="submit" value="Send">
-            </fieldset>
-        </form>
-        </section>
-    
+        <fieldset class="visitor-email form-field">
+          <label for="email">Your email address*</label>
+          <input
+            type="email"
+            required
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+          />
+        </fieldset>
 
-        <footer>
-            <a class="footer-brand" href="home-page.html">
-                <img
-                src="logo.svg"
-                alt="logo"
-                title="citrus raf">
+        <fieldset class="form-field">
+          <label for="tel-number">Your phone number (optional):</label>
+          <input
+            type="tel"
+            id="tel-number"
+            name="tel-number"
+            placeholder="+06-XX-XXX-XXX"
+          />
+        </fieldset>
 
-                <span>Citrus Raf</span> 
-            </a>
+        <fieldset class="visitor-info form-field">
+          <label for="info">What information would you like to share* </label>
+          <textarea
+            required
+            id="info"
+            name="info"
+            rows="25"
+            cols="5"
+            placeholder="Links, locations, sources, contacts, opinion"
+          ></textarea>
+        </fieldset>
 
-            <h4><a href="contact-page.html">Contact Us</a></h4>
+        <fieldset>
+          <input class="send-button form-field" type="submit" value="Send" />
+        </fieldset>
+      </form>
+    </section>
 
-            <p>&copy; 2024 Citrus raf. All rights reserved</p>
-        </footer>
-    </body>
+    <footer>
+      <a class="footer-brand" href="home-page.html">
+        <img src="img/logo.svg" alt="logo" title="citrus raf" />
+
+        <span>Citrus Raf</span>
+      </a>
+
+      <h4><a href="contact-page.html">Contact Us</a></h4>
+
+      <p>&copy; 2024 Citrus raf. All rights reserved</p>
+    </footer>
+  </body>
 </html>

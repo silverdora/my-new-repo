@@ -1,0 +1,12 @@
+Student name: Daria Gakhova
+Student number: 727546
+Student class: HAIT24FT1B
+GitHub Repository: https://github.com/silverdora/web-markup
+GitHub Pages URL: 
+https://github.com/silverdora/web-markup/blob/main/assignment/html/home-page.html
+https://github.com/silverdora/web-markup/blob/main/assignment/html/food.html
+https://github.com/silverdora/web-markup/blob/main/assignment/html/events.html
+https://github.com/silverdora/web-markup/blob/main/assignment/html/beauty-and-care.html
+https://github.com/silverdora/web-markup/blob/main/assignment/html/books.html
+https://github.com/silverdora/web-markup/blob/main/assignment/html/contact-page.html
+https://github.com/silverdora/web-markup/blob/main/assignment/html/css/style.css
