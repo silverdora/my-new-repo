@@ -933,7 +933,7 @@ footer a {
     flex-direction: column;
   }
   .introduction img {
-    width: 92%;
+    max-width: 92%;
     height: auto;
   }
   .introduction .text {
