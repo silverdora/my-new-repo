@@ -2,5 +2,4 @@ Student name: Daria Gakhova
 Student number: 727546
 Student class: HAIT24FT1B
 GitHub Repository: https://github.com/silverdora/web-markup
-GitHub Pages URL: 
-https://silverdora.github.io/web-markup/assignment/html/
+GitHub Pages URL: https://silverdora.github.io/web-markup/assignment/html/
